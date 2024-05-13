@@ -12,7 +12,7 @@ export const TaskList = ({ taskList, deleteTask}: TaskListProps) => {
             <Task
                 key={index}
                 task={task}
-                deleteTask={() => deleteTask}
+                deleteTask={() => deleteTask(index)}
             />
         ))}
     </div>
